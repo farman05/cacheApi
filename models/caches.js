@@ -15,11 +15,9 @@ const CacheSchema = new Schema({
         default: Date.now,
         
     },
-    offset:{
-
-    },
-    count:{
-        type:Number
+    added_on:{
+        type : Date, 
+        default: Date.now,
     },
     updated_on:{
         type : Date, 

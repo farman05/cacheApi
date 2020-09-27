@@ -40,6 +40,8 @@ module.exports = {
         const now = moment()
         const givenTime = moment(dateTime)
         const diff = givenTime.diff(now)
+        console.log({now},{givenTime})
+        console.log({diff})
         return diff > 0 ? true : false
        
     }

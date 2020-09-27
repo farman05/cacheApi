@@ -8,5 +8,13 @@ module.exports = {
          form(
                 field("cached_key").trim().required(),
             ),
+    
+    checkUpdateForm : 
+
+            form(
+                   field("id").trim().required(),
+                   field("random_string").trim().required(),
+
+               ),
 
 }

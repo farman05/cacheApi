@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const CacheSchema = new Schema({
-    key: {
+    cached_key: {
         type: String,
         required: true
     },
@@ -12,7 +12,14 @@ const CacheSchema = new Schema({
     },
     expiry_time: {
         type : Date, 
-        default: Date.now
+        default: Date.now,
+        
+    },
+    offset:{
+
+    },
+    count:{
+        type:Number
     },
     updated_on:{
         type : Date, 
